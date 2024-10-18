@@ -23,6 +23,7 @@ p2.display();
 
 /** Function constructor  */
 console.log("\n-------Function constructor-------");
+
 function Product1(n,P){
   this.name=n;
   this.price=P;

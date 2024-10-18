@@ -9,18 +9,57 @@ function createPromisesWithTimeout(){
     setTimeout(function(){
       let num = getRandomINt(10);
       if(num%2==0){
-        // if the number is even promise is fulfilled 
+        // if the number is even, promise is fulfilled 
         resolve(num);
       }else{
-        // if the number is odd promise is rejected 
+        // if the number is odd, promise is rejected 
         reject(num);
       }
-    },10000);
+    },5000);
     console.log("exiting  the executer callback in the promise constructor");
 
   });
 }
 console.log("Starting...");
-let p1= createPromisesWithTimeout();
+let p1 = createPromisesWithTimeout();
 console.log("we are now waiting for the promises to complete ");
-P1.then(function fulfillHandler(){},function fulfillHandler(){});
+console.log("promise state:", p1);
+
+p1.then(
+  function fulfillHandler(value){
+    console.log(`inside fulfillHandler with value ${value}`)
+    console.log("promise after fulfillment is ",p1);
+  },
+  function rejectionHandler(value){
+    console.log(`inside rejectionHandler with value ${value}`)
+    console.log("promise after rejection is ",p1);
+  }
+);
+
+/**
+ * .then function is used to use the feature of the promises and is used to register first set of handlers in array 
+ * we4 have two function in .then function 
+ *  1. fulfillHandler
+ *   2. rejectionHandler
+ * we have two arrays on fulfillment and rejection 
+ * whatever handler we registered are going to stored in the array 
+ */
+/**
+ * if we do multiple p.then then multiple handlers are registered
+ */
+
+/**microtasking
+ * 
+ */
+
+/** memory spaces for promises 
+ * runtime
+ * event queue 
+ * call stack 
+ * callback queue
+ * microtask queue
+ */
+/**\
+ * microtask queue is preferable for execution as compare to callback queue 
+ * all the fulfill handler comes and sit in n microtask queue and wait for the global code which is executed completely or not 
+ */
