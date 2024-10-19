@@ -45,12 +45,12 @@ p1.then(
  * whatever handler we registered are going to stored in the array 
  */
 /**
+ * .then takes two argument (fulfillHandler , rejectionHandler )
  * if we do multiple p.then then multiple handlers are registered
+ * .then function also returns a new  promises objects 
+ * .th
  */
 
-/**microtasking
- * 
- */
 
 /** memory spaces for promises 
  * runtime
