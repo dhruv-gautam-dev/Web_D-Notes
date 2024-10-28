@@ -1,0 +1,20 @@
+1. difference between maps and objects 
+            map >> ordering  >> during pushinhg element >> cann iterate
+            objects >> suffeling >> during pusing element >> can not iterate
+2. grid , grid templete caumn 
+    {
+      grid-row : 3/4;
+      grid column : 3/4;
+    }
+    >> inline grid 
+
+3. pass array objects funcntino in props {reaCT};
+
+          a. try to avoid using px ,`
+           FONT SIZE{use rem}`
+            or padding margin {em}, `
+          BORDER {EM OR PX },`
+          height an width { vh, vw, %}
+
+          
+          b.
