@@ -91,3 +91,32 @@
 
 // Sometimes we might have to fetch the text written inside a div, paragraph, button etc, in those cases, value doesn't help us because value is generally used to fetch the value of different input tags. if we want to fetch the text written inside the element then we can use textContent property to get and set the text of particular HTML element
 
+/**Browser object model */
+//  this allow running js inside the browser to access a lot of browser related feature ,like the url bar , window frame, reload button etc.
+//  in this object we have one object called 'window'. which is globally available across the js running in the browser.
+//  we can access the following using this window object :
+//  1.Navigator
+//  2.Location
+//  3.History
+//  4.Screen
+//  5.Url bar
+//  6.Reloader
+//  and More...
+
+/**Methods of window object */
+//  1.window.document: it will provide you the access to document object of our DOM.
+//  2.window.location : return a location object which have lot of properties which are related to our current url present in the address bar ,
+//      for ex:
+//              window.location.href ,, returns the complete address written in the address bar.
+//              window.location.href ='https://wwww.yahoo.com' ,, it refresh your current page to yahoo 
+//              window.open : by passing a url it opens the page to us.
+//              window.close(): this will close the current tab in window.
+//              timers: it also contains important timers methods like 'setTimeout' and 'setInterval'
+//              window.addEventListener: we can add event listener to window object as well.
+//              window.alert(): this creates an popup alert on a present tab.
+//              window.confirm(): this also creates a new popup but this popup as a cancel or ok button , and return true if its ok and false it its cancel . 
+//  we can use the window object navigator property this will return us the coordinates
+//  we can access web cam and other devices of the user by using window object.
+//  can access browsers storages 
+//  can access cpu.
+//  Note: if we are try to access this in the browsers console it return the window object only showing the scope in which all this is working is of the window object  
