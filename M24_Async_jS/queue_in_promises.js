@@ -1,7 +1,6 @@
-
-/**               --------value->default(undefined)
- * promises ------
- *                --------state-> default(pending)
+/**Promises
+ * 1----------value->default(undefined)
+ * 2----------state-> default(pending)
  */
 
 new Promise (function exec(res, rej){

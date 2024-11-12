@@ -36,9 +36,20 @@ p1.then(
   }
 );
 
+/**Output
+Starting...
+Entering the executer callback in the promise constructor
+exiting  the executer callback in the promise constructor
+we are now waiting for the promises to complete 
+promise state: Promise { <pending> }
+inside fulfillHandler with value 6
+promise after fulfillment is  Promise { 6 }
+ */
+
+
 /**
  * .then function is used to use the feature of the promises and is used to register first set of handlers in array 
- * we4 have two function in .then function 
+ * we have two function in .then function 
  *  1. fulfillHandler
  *   2. rejectionHandler
  * we have two arrays on fulfillment and rejection 
@@ -59,7 +70,7 @@ p1.then(
  * callback queue
  * microtask queue
  */
-/**\
+/**
  * microtask queue is preferable for execution as compare to callback queue 
  * all the fulfill handler comes and sit in n microtask queue and wait for the global code which is executed completely or not 
  */

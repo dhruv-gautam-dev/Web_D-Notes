@@ -40,7 +40,6 @@ function timeConsumingByLoop(){
     // some task 
   }
   console.log("loops ends");
-
 }
 
 function timeConsumingByFeature(){
@@ -55,6 +54,24 @@ timeConsumingByFeature();
 timeConsumingByLoop();
 
 console.log("BY");
+/**OutPut
+Hi we are starting...
+Done
+HI
+by
+---------------------------------------demo------------------------------->>
+Hi
+loops starts
+loops ends
+Starting timer
+loops starts
+loops ends
+BY
+time done
+completed the timer
+ */
+
+
 
 /**javaScript always give preference to synchronous peace of code as compare to runtime peace of code or asynchronous peace of code  */
 /**event loop connect every thing and constantly check that is there any global code in call stack  */

@@ -15,7 +15,7 @@ function createPromisesWithLoop(){
         /**if random number is even we can fulfill it  */
         resolve(num);
       }else{
-        /**if random number is even we can  reject it  */
+        /**if random number is not  even we can  reject it  */
         reject(num);
       }
     },10000000);
@@ -25,6 +25,12 @@ function createPromisesWithLoop(){
 }
 let x = createPromisesWithLoop();
 console.log(x);
+/**Output
+started
+in getRandomINt fun
+function executed
+Promise { <pending> }
+*/
 
 /**
  * state of promise only change if call the resolve() or reject() function 
